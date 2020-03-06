@@ -1,0 +1,73 @@
+baseURL = "https://yeanlaofans.github.io/"
+languageCode = "zh-tw"
+title = "鹽寮之友"
+theme = "personal-web"
+enableEmoji=true
+enableRobotsTXT=false
+pygmentsUseClasses=false
+pygmentsCodeFences=false
+
+
+[params.intro]
+  main = "鹽寮之友"
+  sub = "簡樸|自然|靈修"
+
+[blackfriday]
+  hrefTargetBlank = false
+
+[params]
+  breadcrumb = false
+  accentColor = "#FD3519"
+  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+
+[params.notFound]
+  gopher = "/images/404.webp" 
+  h1 = '喔噢！'
+  p = "事情就是這樣呀，找不到你想找的，或許靜下來想一想，重新再試！"
+
+[params.sections]
+  # Define how your sections will be called
+  # when automatically pulled. For instance in the 404 page
+#  portfolio = "project"
+#  post = "article"
+
+[params.sidebar]
+  backgroundImage = '/images/bg.webp' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+  logo = "/images/logo.webp" # - default "/images/edna-west.jpg"
+[params.assets]
+  favicon = "/images/icon.svg"
+  customCSS = "/css/blog.css"
+
+[params.contact]
+#  email = ""
+#  text= "" # text of the contact link in the sidebar. If email params.contact.email is defined
+
+
+[menu]
+
+[[menu.main]]
+  identifier = "about"
+  name = "關於"
+  title = "About section"
+  url = "/about/"
+  weight = -120
+
+[[menu.main]]
+  identifier = "portfolio"
+  name = "通訊"
+  title = "newsletter"
+  url = "/newsletter/"
+  weight = -110
+
+[[menu.main]]
+  identifier = "blog"
+  name = "文章"
+  title = "Blog section"
+  url = "/post/"
+  weight = -100
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
